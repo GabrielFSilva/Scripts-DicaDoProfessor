@@ -1,0 +1,8 @@
+/// @description JumpInDirection(distance, direction)
+/// @param distance
+/// @param direction
+
+// Move o objeto que executou o script baseado em sua direção ("direction")
+// A distância movida é definida pelo argumento "distance"
+x += lengthdir_x(argument0,argument1)
+y += lengthdir_y(argument0,argument1)

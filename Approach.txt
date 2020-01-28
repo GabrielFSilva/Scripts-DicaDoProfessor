@@ -1,0 +1,26 @@
+/// Approach(a, b, amount)
+/// @param a
+/// @param b
+/// @param amout
+// Move "a" em direção a "b" com o valor de "amount" e retorna o resultado
+// A função não irá ultrapasse o valor de "b" e funciona em ambas as direções
+// Exemplos:
+//      speed = Approach(speed, max_speed, acceleration);
+//      hp = Approach(hp, 0, damage_amount);
+//      hp = Approach(hp, max_hp, heal_amount);
+//      x = Approach(x, target_x, move_speed);
+//      y = Approach(y, target_y, move_speed);
+
+if (argument0 < argument1)
+{
+    argument0 += argument2;
+    if (argument0 > argument1)
+        return argument1;
+}
+else
+{
+    argument0 -= argument2;
+    if (argument0 < argument1)
+        return argument1;
+}
+return argument0;

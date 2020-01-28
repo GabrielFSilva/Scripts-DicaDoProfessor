@@ -1,0 +1,23 @@
+//Wave(from, to, duration, offset)
+/// @param from
+/// @param to
+/// @param duration
+/// @param offset
+
+// Retorna um valor que irá oscilar entre "from" e "to" 
+// com o período definido em segundos por "duration"
+
+// Exemplos
+//      image_angle = Wave(-45,45,1,0)  -> Gira uma imagem "para frente e para trás"
+//											90 graus por segundo
+//      x = Wave(-10,10,0.25,0)         -> Move uma instância para esquerda
+//											e para a direita rápidamente
+// 
+//      image_xscale = Wave(0.5, 2.0, 1.0, 0.0) -> Esticam a imagem de um Sprite
+//      image_yscale = Wave(2.0, 0.5, 1.0, 0.0)
+
+// a4 indica o meio entre "from" e "to"
+a4 = (argument1 - argument0) * 0.5;
+// a5 indica o angulo na onda de seno
+a5 = (((current_time * 0.001) + argument2 * argument3) / argument2);
+return argument0 + a4 + (sin(a5 * (pi*2)) * a4);

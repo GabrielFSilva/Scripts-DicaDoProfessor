@@ -1,0 +1,9 @@
+/// @description Chance(percent)
+/// @param percent
+
+// Retorna um valor true ou false
+// baseado em um número gerado aleatoriamente
+// Exemplo: 
+//		Chance(0.7);	-> Returna true 70% do tempo
+
+return argument0 > random(1);
